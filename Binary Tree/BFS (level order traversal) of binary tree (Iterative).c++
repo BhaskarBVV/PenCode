@@ -55,3 +55,5 @@ int main()
     cout << "Level order traversal will be: ";
     bfs(root);
 }
+
+https://eduloop1.blogspot.com/2021/08/bfs-level-order-traversal-of-binary.html
