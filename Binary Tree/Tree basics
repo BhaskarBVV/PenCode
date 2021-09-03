@@ -1,0 +1,64 @@
+ A graph is called a tree having no cycles, no self loops, no parallel edges.
+
+
+
+full binary tree
+
+all nodes with 0 or 2 childs
+
+if n leaf nodes, total nodes=2n-1;
+
+total internal nodes=total nodes-leaf nodes-one root node
+
+
+
+complete binary tree
+
+each level must be completely filled, except the last level, and all leaf nodes must be as left as possible.
+
+nodes at level i=(2^i) except last 
+
+
+
+a full binary tree is not complete binary tree and a complete binary tree is not a full binary tree
+
+except only one condition, in which full binary tree<-> complete binary tree when each node has either 0 or 2 child nodes and
+
+on last level the child must be as left as possible, also called perfect binary tree.
+
+
+
+
+
+Array representation and linked list representation.
+
+
+
+Array representation
+
+No. of levels must be known to us at beginning.
+
+maximum no. of nodes at a level l = 2^(l+1)-1.
+
+hence for array representation an array of size 2^(l+1)-1 must be taken.
+
+for any node i the left child will be at 2i+1 and right node=2i+1 (note: indexing is zero based)
+
+
+
+
+
+Linked list representation
+
+In normal binary tree (not BST) the time complexity to find a node is 
+
+we can increase the speed of binary tree traversals by using threaded binary trees.
+
+
+
+Drawbacks of Binary search tree
+
+Its time comp. should be O(log n), but if the data is in sorted order, then its complexity will become O(n).
+
+
+https://eduloop1.blogspot.com/2021/07/tree-basics.html
