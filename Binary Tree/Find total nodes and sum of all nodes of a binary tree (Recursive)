@@ -1,4 +1,4 @@
- #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 struct TreeNode
 {
@@ -52,6 +52,18 @@ int main()
          << totalNodes(root) << endl;
     cout << "Total sum of all nodes will be: " 
          << sumOfNodes(root);
+}
+-----------------------------------------------END OF CODE---------------------------------------------------------------------------------------
+-----------------------------------------A Bit Explaination of code-------------------------------------------------------------------------------
+In order to get the sum of nodes of binary tree,  add the value of the root node, and move to the left subtree and right subtree, 
+if root have reached to the end, i.e. after root->left=0, root will store 0, in that case return 0.
+
+long int sumBT(Node* root)
+{
+    if (root==0)
+    return 0;
+    else 
+    return root->key+sumBT(root->right)+sumBT(root->left);
 }
 
 
