@@ -95,7 +95,8 @@ int main()
     print(root);
     cout << "\nEnter the value to be deleted : ";
     cin >> x;
-    deleteNode(root, x);
+    root=deleteNode(root, x);
+    //Root value must be updated, 
     cout << "\nThe inorder of tree is : ";
     print(root);
 }
