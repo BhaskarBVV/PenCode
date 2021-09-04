@@ -104,7 +104,7 @@ int main()
     cin >> n;
     cout << "Enter First Sorted List : \n";
     Node *h1 = createList(n);
-    cout << "Enter the size of first Linked List ";
+    cout << "Enter the size of second Linked List ";
     cin >> n;
     cout << "Enter Second Sorted List : \n";
     Node *h2 = createList(n);
