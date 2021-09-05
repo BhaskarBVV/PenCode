@@ -91,6 +91,3 @@ int main()
     cout << "The Level Order Traversal of tree is:\n";
     bfs(root);
 }
-
-
-https://eduloop1.blogspot.com/2021/09/construct-binary-tree-from-preorder-and.html
