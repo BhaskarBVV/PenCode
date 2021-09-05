@@ -16,7 +16,9 @@ TreeNode *BuildTree()
     if (d == -1)
         return NULL;
     TreeNode *Node = new TreeNode(d);
+    cout << "Enter left child of " << d << " : ";
     Node->left = BuildTree();
+    cout << "Enter right child of " << d << " : ";
     Node->right = BuildTree();
     return Node;
 }
@@ -30,6 +32,7 @@ void print(TreeNode *root)
 }
 int main()
 {
+    cout << "Build Tree : ";
     TreeNode *root = BuildTree();
     cout << "PreOrder of Tree is: ";
     print(root);
