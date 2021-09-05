@@ -73,5 +73,3 @@ int main()
     LeftView(root);
 }
 
-
-https://eduloop1.blogspot.com/2021/09/left-view-of-binary-tree-method-2-using.html
