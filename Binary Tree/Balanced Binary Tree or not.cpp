@@ -1,4 +1,4 @@
- #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 struct TreeNode
 {
@@ -62,11 +62,6 @@ int main()
     cout << "Is tree balanced: " << isBalanced(root).balanced;
 }
 
-
-//In this also we are moving from bottom to top,
-i.e first we've reached to the leaf nodes by repeatedly
-calling recursive functions and then building up.
-
-
-
-https://eduloop1.blogspot.com/2021/08/balanced-binary-tree-or-not.html
+// In this also we are moving from bottom to top,
+// i.e first we've reached to the leaf nodes by repeatedly
+// calling recursive functions and then building up.
