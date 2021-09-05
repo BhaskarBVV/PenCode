@@ -48,6 +48,3 @@ int main()
     cout << "The PreOrder of Tree is: ";
     print(root);
 }
-
-
-https://eduloop1.blogspot.com/2021/09/convert-sorted-array-to-balanced-101.html
