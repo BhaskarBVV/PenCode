@@ -7,8 +7,7 @@ struct TreeNode
     TreeNode *right;
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) : 
-                       val(x), left(left), right(right) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 TreeNode *BuildTree()
 {
@@ -27,8 +26,6 @@ void print(TreeNode *root)
         return;
     cout << root->val;
     print(root->left);
-
-
     print(root->right);
 }
 void bfs(TreeNode *root)
@@ -55,5 +52,3 @@ int main()
     cout << "Level order traversal will be: ";
     bfs(root);
 }
-
-https://eduloop1.blogspot.com/2021/08/bfs-level-order-traversal-of-binary.html
