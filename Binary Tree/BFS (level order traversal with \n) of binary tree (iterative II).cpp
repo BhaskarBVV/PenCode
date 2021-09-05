@@ -63,8 +63,3 @@ int main()
     cout << "Level order traversal will be: \n";
     bfs(root);
 }
-
-
-
-
-https://eduloop1.blogspot.com/2021/08/bfs-level-order-traversal-with-n-of.html
