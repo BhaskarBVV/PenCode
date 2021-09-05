@@ -66,6 +66,3 @@ int main()
     cin >> x;
     cout << "\nIs present " << x << boolalpha << " :" << search(x, root);
 }
-
-
-//https://eduloop1.blogspot.com/2021/09/search-in-bst.html
