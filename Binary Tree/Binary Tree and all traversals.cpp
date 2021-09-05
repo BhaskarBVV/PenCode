@@ -61,8 +61,3 @@ int main()
     postorder(root);
     return 0;
 }
-
-
-
-
-https://eduloop1.blogspot.com/2021/01/binary-tree-and-all-traversals.html
