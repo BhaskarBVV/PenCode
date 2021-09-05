@@ -72,6 +72,3 @@ int main()
     cout << "\nThe Right view is: ";
     RightView(root);
 }
-
-
-https://eduloop1.blogspot.com/2021/09/right-view-of-binary-tree-method-2.html
