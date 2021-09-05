@@ -39,8 +39,7 @@ int sumOfNodes(TreeNode *root)
 {
     if (root == NULL)
         return 0;
-    return root->val + sumOfNodes(root->left) + 
-                                   sumOfNodes(root->right);
+    return root->val + sumOfNodes(root->left) + sumOfNodes(root->right);
 }
 int main()
 {
@@ -53,19 +52,15 @@ int main()
     cout << "Total sum of all nodes will be: " 
          << sumOfNodes(root);
 }
------------------------------------------------END OF CODE---------------------------------------------------------------------------------------
------------------------------------------A Bit Explaination of code-------------------------------------------------------------------------------
-In order to get the sum of nodes of binary tree,  add the value of the root node, and move to the left subtree and right subtree, 
-if root have reached to the end, i.e. after root->left=0, root will store 0, in that case return 0.
+//-----------------------------------------------END OF CODE---------------------------------------------------------------------------------------
+//-----------------------------------------A Bit Explaination of code-------------------------------------------------------------------------------
+//In order to get the sum of nodes of binary tree,  add the value of the root node, and move to the left subtree and right subtree, 
+//if root have reached to the end, i.e. after root->left=0, root will store 0, in that case return 0.
 
-long int sumBT(Node* root)
-{
-    if (root==0)
-    return 0;
-    else 
-    return root->key+sumBT(root->right)+sumBT(root->left);
-}
-
-
-https://eduloop1.blogspot.com/2021/08/find-total-nodes-and-sum-of-all-nodes.html
-
+// long int sumBT(Node* root)
+// {
+//     if (root==0)
+//     return 0;
+//     else 
+//     return root->key+sumBT(root->right)+sumBT(root->left);
+// }
