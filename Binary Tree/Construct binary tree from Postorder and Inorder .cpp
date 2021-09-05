@@ -11,7 +11,7 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
-TreeNode *Build_Tree_Helper(vector<int> post, vector<int> ino, int postS, int postE, int inS, int inE)
+TreeNode *Build_Tree_Helper(vector<int> &post, vector<int> &ino, int postS, int postE, int inS, int inE)
 {
 
     if (postS > postE || inS > inE)
