@@ -130,7 +130,3 @@ int main()
 
     return 0;
 }
-
-
-
-https://eduloop1.blogspot.com/2021/07/merge-sort-linked-list-fast-less-memory.html
