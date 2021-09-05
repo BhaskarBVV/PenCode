@@ -57,10 +57,9 @@ int main()
 
 
 
-                    8                           63
-            10           3     To->     23            27  
-          1    6        4            1      16      13
-              9 7     13                  9    7   13
+  //                 8                           63
+  //          10           3     To->     23            27  
+  //        1    6        4            1      16      13
+  //            9 7     13                  9    7   13
               
-              
-https://eduloop1.blogspot.com/2021/09/replace-every-node-except-child-node-by.html              
+                      
