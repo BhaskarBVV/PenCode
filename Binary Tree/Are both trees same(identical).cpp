@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+using namespace std;
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+TreeNode *BuildTree()
+{
+    int d;
+    cin >> d;
+    if (d == -1)
+        return NULL;
+    TreeNode *Node = new TreeNode(d);
+    cout << "Enter the left child of " << d << " : ";
+    Node->left = BuildTree();
+    cout << "Enter the right child of " << d << " : ";
+    Node->right = BuildTree();
+    return Node;
+}
+void print(TreeNode *root)
+{
+    if (root == NULL)
+        return;
+    cout << root->val;
+    print(root->left);
+    print(root->right);
+}
+bool are_same(TreeNode *p, TreeNode *q)
+{
+    if (p == NULL && q == NULL)
+        return true;
+    else if ((p == NULL && q != NULL) || (q == NULL && p != NULL))
+        return false;
+    else
+    {
+        return are_same(p->left, q->left) && are_same(p->right, q->right) && ((p->val == q->val) ? true : false);
+    }
+}
+int main()
+{
+    cout << "Build first tree : ";
+    TreeNode *root1 = BuildTree();
+    cout << "PreOrder of first Tree is: ";
+    print(root1);
+    cout << "\nBuild second tree : ";
+    TreeNode *root2 = BuildTree();
+    cout << "PreOrder of second Tree is: ";
+    print(root2);
+    cout << "\nAre both trees same : " << boolalpha << are_same(root1, root2);
+    cout << endl;
+}
