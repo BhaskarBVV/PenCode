@@ -64,9 +64,3 @@ int main()
     cout << endl;
     cout << "The daimeter of binary tree : " << diameter(root);
 }
-
-
-https://eduloop1.blogspot.com/2021/08/diameter-of-binary-tree-un-optimized.html
-
-
-
