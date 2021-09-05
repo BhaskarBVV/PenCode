@@ -53,8 +53,3 @@ int main()
     int level = 0;
     RightView(root, level, max_level);
 }
-
-
-
-
-https://eduloop1.blogspot.com/2021/09/left-view-of-binary-tree-method-1.html
