@@ -1,4 +1,4 @@
- #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 struct TreeNode
 {
@@ -60,11 +60,6 @@ int main()
     cout<<"The daimeter of binary tree : "<<diameter(root).dia;
 }
 
-
-In this approach we are moving from bottom to top,
-building from bottom both height and diameter, 
-hence we do not need to call height function again for every node;
-
-
-
-https://eduloop1.blogspot.com/2021/08/diameter-of-binary-tree-optimized.html
+// In this approach we are moving from bottom to top,
+// building from bottom both height and diameter, 
+// hence we do not need to call height function again for every node;
