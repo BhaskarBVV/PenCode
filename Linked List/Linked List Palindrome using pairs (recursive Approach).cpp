@@ -28,7 +28,6 @@ ListNode *BuildList()
     }
     return head;
 }
-ListNode *left = new ListNode(0);
 pair<bool, ListNode *> is_Palindrome(ListNode *head, ListNode *left)
 {
     if (head == NULL)
