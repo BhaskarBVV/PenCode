@@ -12,6 +12,7 @@ void bubble_sort_half_recursive(int a[], int n)
         if (a[i] > a[i + 1])
             swap(a[i], a[i + 1]);
     }
+    // for the next pass we will reduce number of elements by 1.
     bubble_sort_half_recursive(a, n - 1);
 }
 void bubble_sort_complete_recursive(int a[], int j, int n)
