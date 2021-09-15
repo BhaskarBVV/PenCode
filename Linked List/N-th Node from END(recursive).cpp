@@ -31,11 +31,11 @@ ListNode *BuildList()
     }
     return head;
 }
-void removeNthFromEnd(ListNode *head, int pos, int &cnt)
+void N_th_Node_from_end(ListNode *head, int pos, int &cnt)
 {
     if (head == NULL)
         return;
-    removeNthFromEnd(head->next, pos, cnt);
+    N_th_Node_from_end(head->next, pos, cnt);
     cnt += 1;
     if (pos == cnt)
         cout << head->val;
@@ -51,12 +51,12 @@ void print(ListNode *head)
 }
 int main()
 {
-    cout << "Build List : ";
+    cout << "Build List : \n";
     ListNode *head = BuildList();
     int pos;
     cout << "Enter N-th pos from end : ";
     cin >> pos;
     int cnt = 0;
     cout << "The N-th node from end is : ";
-    removeNthFromEnd(head, pos, cnt);
+    N_th_Node_from_end(head, pos, cnt);
 }
