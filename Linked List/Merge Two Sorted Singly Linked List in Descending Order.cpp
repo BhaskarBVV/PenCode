@@ -1,7 +1,7 @@
 // 5->10->15->40->NULL 
 // 2->3->20->NULL
 // After merging : 40->20->15->10->5->3->2->NULL
-
+// Add the newnodes in beginning instead of end at every time;
 
 //Bhaskar Varshney
 #include <iostream>
