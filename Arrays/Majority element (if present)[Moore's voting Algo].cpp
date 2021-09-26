@@ -1,4 +1,5 @@
 //Bhaskar Varshney
+//Can also be done by map and O(n^2) complexity.
 #include <iostream>
 using namespace std;
 int majorityElement(int a[], int size)
