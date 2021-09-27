@@ -98,7 +98,7 @@ int Length_Of_Loop(ListNode *head)
         // Here i've moved fast until its next is not equal to slow.
         while (fast->next != slow)
         {
-            //line 93, 94.
+            //line 97, 98.
             cnt++;
             fast = fast->next;
         }
