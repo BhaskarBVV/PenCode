@@ -89,6 +89,29 @@ ListNode *compute(ListNode *head)
     head = rev(head);
     return head;
 }
+
+// OR
+
+// ListNode *compute(ListNode *head)
+// {
+//     if (head == NULL || head->next == NULL)
+//         return head;
+//     head = rev(head);
+//     ListNode *temp = head;
+//     while (temp != NULL)
+//     {
+//         if (temp->next != NULL && temp->data > temp->next->data)
+//         {
+//             temp->next = temp->next->next;
+//             temp = temp->next;
+//         }
+//         else
+//             temp = temp->next;
+//     }
+//     head = rev(head);
+//     return head;
+// }
+
 int main()
 {
     cout << "Build list : \n";
