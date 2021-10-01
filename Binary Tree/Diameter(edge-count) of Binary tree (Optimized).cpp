@@ -7,7 +7,7 @@ struct TreeNode
     TreeNode *right;
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) :  val(x), left(left), right(right) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 TreeNode *BuildTree()
 {
@@ -40,7 +40,7 @@ pairr diameter(TreeNode *root)
     pairr p;
     if (root == NULL)
     {
-        p.hgt = 0;
+        p.hgt = -1;
         p.dia = 0;
         return p;
     }
@@ -48,7 +48,7 @@ pairr diameter(TreeNode *root)
     pairr right = diameter(root->right);
 
     p.hgt = max(left.hgt, right.hgt) + 1;
-    p.dia = max(left.hgt + right.hgt, max(left.dia, right.dia));
+    p.dia = max(left.hgt + right.hgt + 2, max(left.dia, right.dia)); // (left.hgt + right.hgt + 2) there are two edges between left and right subtree if dia passes through root node,
     return p;
 }
 int main()
@@ -57,9 +57,9 @@ int main()
     cout << "PreOrder of Tree is: ";
     print(root);
     cout << endl;
-    cout<<"The daimeter of binary tree : "<<diameter(root).dia;
+    cout << "The daimeter of binary tree : " << diameter(root).dia;
 }
 
 // In this approach we are moving from bottom to top,
-// building from bottom both height and diameter, 
+// building from bottom both height and diameter,
 // hence we do not need to call height function again for every node;
