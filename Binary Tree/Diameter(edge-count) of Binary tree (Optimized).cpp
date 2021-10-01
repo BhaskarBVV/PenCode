@@ -35,6 +35,10 @@ public:
     int hgt;
     int dia;
 };
+
+// If we are counting dia or height on basis of number of edges, then for NULL height=-1;
+// and if on basis of number of nodes, then for NULL height=0;
+
 pairr diameter(TreeNode *root)
 {
     pairr p;
