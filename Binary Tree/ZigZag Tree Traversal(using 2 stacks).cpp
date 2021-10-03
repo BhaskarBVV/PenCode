@@ -47,17 +47,17 @@ void InOrder(TreeNode *root)
 
 vector<int> zigZagTraversal(TreeNode *root)
 {
-    
-    stack<Node *> ms, cs;
+
+    stack<TreeNode *> ms, cs;
     int flag = 1;
-    Node *temp = NULL;
+    TreeNode *temp = NULL;
     vector<int> v;
     ms.push(root);
     while (!ms.empty())
     {
         temp = ms.top();
         ms.pop();
-        v.push_back(temp->data);
+        v.push_back(temp->val);
         if (flag == 1)
         {
             if (temp->left)
