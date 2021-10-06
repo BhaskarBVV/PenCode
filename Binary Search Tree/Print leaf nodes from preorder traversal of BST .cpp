@@ -1,5 +1,11 @@
 //Bhaskar Varshney
+
 // simialr for postorder...
+
+// In preOrder of BST, The first value is root node and rest are child nodes, the values samller than first value will come in left subtree and 
+// values greater than first will come in right subtree.
+// PREORDER--structure-->>>>  <root> <smaller values(left Subtree)> <Right subtree(greater values)> 
+
 #include <iostream>
 #include <queue>
 using namespace std;
