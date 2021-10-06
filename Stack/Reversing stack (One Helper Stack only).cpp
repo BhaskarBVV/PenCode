@@ -1,3 +1,24 @@
+// ONE HELPER STACK (let it be S2)
+// ->
+// i=0
+// x=S1.top()
+// pop top element
+// pop remaining(n-1-i) elements and push in S2.
+// Now push x in S1.
+// and pop S2 completely and push it in S1
+// i++
+// (Now initial top most element is at bottom)
+// -------------------------------------------------
+// now store top most value in x=S1.top()
+// pop top element
+// pop remaining (n-1-i) elements and push in S2.
+// Now push x in S1.
+// and pop S2 completely and push it in S1
+// i++
+// (Now initial second top most element is at second position from bottom)
+// ----------------------------------------------------------------------------------------
+// continue until i==n-1
+    
 #include <bits/stdc++.h>
 using namespace std;
 stack<int> rev(stack<int> s)
