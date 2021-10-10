@@ -6,6 +6,7 @@
 //                     /   \      
 //                    10    14
 // For the above tree the output should be 5 10 4 14 25.
+// Store last value corressponding to every vertical line in map from queue, and finally from map to vector.
 
 //Bhaskar Varshney
 #include <bits/stdc++.h>
