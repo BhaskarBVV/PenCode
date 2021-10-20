@@ -36,7 +36,8 @@ string longestPalin(string s)
           
             if (dp[i][j] && ed - st < j - i)
             {
-              // considering the first Palindromic substring of particular length (of course it will be longest bcz each time we are moving ahead)
+              // considering the first Palindromic substring of particular length (of course it will be longest bcz each time we are moving ahead,
+              // gap is increasing although the differece between (i) and (j) are constant ).
               // remove the condition (ed - st < j - i) to get the last Palindromic substring of particular length
                 st = i;
                 ed = j;
