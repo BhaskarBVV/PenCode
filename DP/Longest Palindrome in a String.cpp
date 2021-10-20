@@ -14,6 +14,7 @@ string longestPalin(string s)
     {
         for (i = 0, j = gap; j < s.size(); i++, j++)
         {
+          // we will always be moving diagonally
             if (gap == 0)
                 dp[i][j] = true;
             else if (gap == 1)
