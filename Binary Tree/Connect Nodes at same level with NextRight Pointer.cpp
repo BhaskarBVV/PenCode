@@ -49,6 +49,8 @@ void InOrder(TreeNode *root)
 }
 void connect(TreeNode *root)
 {
+    if(root==NULL)
+        return root;
     queue<TreeNode *> q;
     TreeNode *temp = NULL;
     q.push(root);
