@@ -25,7 +25,7 @@ public:
         vector<vector<int>>res;
         vector<int>cur;
         bool visited[nums.size()];
-        // memset(visited, visited+nums.size(), false);
+        
         for(int i=0;i<nums.size();i++)
             visited[i]=false;
         backtrack(s, nums, cur, visited);
