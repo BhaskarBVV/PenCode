@@ -16,7 +16,7 @@
 
 class Solution {
 public:
-    bool carPooling(vector<vector<int>>& t, int c) 
+    bool carPooling(vector<vector<int>>& t, int c)    //Here, t->trip array and c->capacity of train.
     {
       // divided the trip array into two arrays:
       // 1. array with starting intervals and the number of passengers at that place.
