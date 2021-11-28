@@ -45,6 +45,8 @@ void InOrder(TreeNode *root)
 }
 vector<int> zigZagTraversal(TreeNode *root)
 {
+    if(root==NULL)
+        return {};
     TreeNode *temp = NULL;
     queue<TreeNode *> q;
     q.push(root);
