@@ -4,7 +4,7 @@ void del(vector<vector<int>> &grid, int i, int j)
 {
     if (i < 0 || i >= grid.size() || j < 0 || j >= grid[0].size() || grid[i][j] == 0)
         return;
-    grid[i][j] = 0;
+    grid[i][j] = 0; // del krte main har baar, wo poora island/ that conneected cells ko 0 (according to question, doosri given value, jis pr dfs ni ho rhi hai) main convert krdo(easiest way to delete), taaki wo aage dobara "validate_is_Subisland" main call na ho jayein, (stack overflow ho jaayegi, wo bar bar wahin ghoomta rahega)
     del(grid, i + 1, j);
     del(grid, i, j + 1);
     del(grid, i - 1, j);
