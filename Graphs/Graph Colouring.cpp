@@ -10,25 +10,31 @@ public:
             adj[it[1] - 1].push_back(it[0] - 1);
         }
         vector<int> col(n, -1);
-        col[0] = 1;
-        queue<int> q;
-        q.push(0);
-        int temp;
-        while (!q.empty())
-        {
-            temp = q.front();
-            q.pop();
-            for (auto it : adj[temp])
+        for (int i = 0; i < n; i++) 
+        { // we use the loop because there can be more than one connected component.
+            if (col[i] == -1)
             {
-                if (col[it] == -1)
+                col[i] = 1;
+                queue<int> q;
+                q.push(i);
+                int temp;
+                while (!q.empty())
                 {
-                    col[it] = 1 - col[temp];
-                    q.push(it);
-                }
-                else
-                {
-                    if (col[it] != 1 - col[temp])
-                        return false;
+                    temp = q.front();
+                    q.pop();
+                    for (auto it : adj[temp])
+                    {
+                        if (col[it] == -1)
+                        {
+                            col[it] = 1 - col[temp];
+                            q.push(it);
+                        }
+                        else
+                        {
+                            if (col[it] != 1 - col[temp])
+                                return false;
+                        }
+                    }
                 }
             }
         }
