@@ -1,3 +1,6 @@
+// PQ in java by defalut return min value.
+// use new PriorityQueue<Integer>(Collections.reverseOrder()); to get max value on remove.
+
 public class sol {
   public static class pair {
     int height, diameter;
