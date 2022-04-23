@@ -1,24 +1,23 @@
-vector<int> bfsOfGraph(int v, vector<int> adj[])
+vector<int> bfsOfGraph(int V, vector<int> adj[])
 {
-    vector<int> is_tra(v + 1, 0);
-    vector<int> bfs;
+    vector<int> ans;
     queue<int> q;
     q.push(0);
-    int x;
+    vector<bool> vis(V, false);
+    vis[0] = true;
     while (!q.empty())
     {
-        x = q.front();
+        int temp = q.front();
         q.pop();
-        if (is_tra[x] == 0)
+        ans.push_back(temp);
+        for (auto it : adj[temp])
         {
-            is_tra[x] = 1;
-            bfs.push_back(x);
-            for (auto it : adj[x])
+            if (vis[it] == false)
             {
-                if (is_tra[it] == 0)
-                    q.push(it);
+                q.push(it);
+                vis[it] = true;
             }
         }
     }
-    return bfs;
+    return ans;
 }
