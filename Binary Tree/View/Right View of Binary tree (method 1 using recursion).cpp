@@ -53,3 +53,36 @@ int main()
     int level = 0;
     RightView(root, level, max_level);
 }
+
+
+
+
+
+
+// can also be done using map
+// NOTE: calls toh pehle right main hi lagengi, then left (root ke right, left).
+class Solution
+{
+public:
+    void right(TreeNode *root, map<int, int> &mp, vector<int> &ans, int lvl)
+    {
+        if (root == NULL)
+            return;
+        if (mp.find(lvl) == mp.end())
+        {
+            ans.push_back(root->val);
+            mp[lvl] = root->val;
+        }
+        right(root->right, mp, ans, lvl + 1);
+        right(root->left, mp, ans, lvl + 1);
+    }
+    vector<int> rightSideView(TreeNode *root)
+    {
+        if (root == NULL)
+            return {};
+        vector<int> ans;
+        map<int, int> mp;
+        right(root, mp, ans, 0);
+        return ans;
+    }
+};
