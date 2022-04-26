@@ -12,6 +12,7 @@ public:
     int minCostConnectPoints(vector<vector<int>> &points)
     {
         int n = points.size();
+            //pair(node, weight)
         vector<pair<int, int>> adj[n];
         for (int i = 0; i < points.size(); i++)
             for (int j = i + 1; j < points.size(); j++)
@@ -24,6 +25,7 @@ public:
 
         vector<ll> val(n, LONG_LONG_MAX);
         val[0] = 0;
+                   //pair(node, weight)
         priority_queue<pair<int, int>, vector<pair<int, int>>, comp> pq;
         vector<bool> vis(n, false);
         pq.push({0, 0});
