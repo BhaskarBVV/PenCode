@@ -18,6 +18,9 @@ struct comp
         return p1.second > p2.second;
     }
 };
+
+//PRIMS JAISA HI HAI, BAS DIFF. ITNA HAI: KI HAR BAAR NODE AUR WEIGHT ENTER NI KRENGE P.Q. MAIN, INSTEAD AB TAK KA WEIGHT + CURRENT NODE KA WEIGHT PUSH krenge.
+
 void solve()
 {
     int n, m, a, b, wt;
@@ -64,7 +67,7 @@ void solve()
     // }
     vector<int> ans;
     int flag = 0;
-    dfs(ans, n, parent, flag);
+    dfs(ans, n, parent, flag);  // ye kuch krna hoga kisi question main, verna parnet array toh hai humaray paas.
     reverse(ans.begin(), ans.end());
     if (*ans.begin() != 1 || flag == 1)
     {
