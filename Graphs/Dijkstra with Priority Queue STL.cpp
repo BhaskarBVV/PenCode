@@ -52,7 +52,7 @@ void solve()
                 {
                     val[it.first] = val[temp.first] + it.second;
                     pq.push({it.first, val[it.first]});
-                    parent[it.first + 1] = temp.first + 1;
+                    parent[it.first + 1] = temp.first + 1;  //indexing ka chakkar 0 ni hoga isme node koi, par maine 0 maan ke kr liye hai, toh actual parent toh +1 ho hoga na
                 }
             }
         }
