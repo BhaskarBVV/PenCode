@@ -40,6 +40,8 @@ public:
         }
         if (last_level.size() == 1)
             return last_level[0];
+        //if last level has one node, than it's itself is its LCA
+        // if last level has more than 1 node than their LCA = LCA of(1st and last node) of that level.
         return lca(root, last_level[0], *last_level.rbegin());
     }
 };
