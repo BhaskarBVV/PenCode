@@ -1,3 +1,5 @@
+# https://www.geeksforgeeks.org/problems/mother-vertex/1
+
 class Solution:
     def __init__(self):
         self.visited = []
